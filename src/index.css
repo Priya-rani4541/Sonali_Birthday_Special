@@ -1,0 +1,19 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html { scroll-behavior: smooth; }
+body {
+  @apply font-body text-plum antialiased;
+  background: linear-gradient(160deg, #fff8ef 0%, #ffe3ee 45%, #e8dcfb 100%);
+  background-attachment: fixed;
+  overflow-x: hidden;
+}
+:focus-visible { outline: 3px solid #8b6bc7; outline-offset: 3px; }
+.paper {
+  background: repeating-linear-gradient(#fffdf8 0 31px, #f6e6ee 31px 32px);
+  line-height: 32px;
+}
+@media (prefers-reduced-motion: reduce) {
+  * { animation-duration: .01ms !important; transition-duration: .01ms !important; }
+}
